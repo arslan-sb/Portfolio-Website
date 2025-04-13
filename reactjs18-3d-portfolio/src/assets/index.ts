@@ -6,6 +6,15 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import python from './python.jpg'
+import django from './django.svg'
+import fastapi from './fastapi.png'
+import pytorch from './pytorch.svg'
+import tensorflow from './tensorflow.png'
+import sql from './sql.png'
+import flask from './flask.jpg'
+import sklearn from './sklearn.png'
+import huggingface from './huggingface.svg'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -25,10 +34,18 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import sybrid from "./company/sybrid.png";
+import daxno from "./company/daxno.png";
+import ceai from "./company/coeai.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import stockgenie from "./stockgenie.png";
+import croprec from "./croprec.png";
+import resumeanalyzer from "./resumeanalyzer.png";
+import globaltalk from "./globaltalk.jpg";
+import airbnbanalysis from "./airbnbanalysis.png";
 
 export {
   logo,
@@ -59,4 +76,21 @@ export {
   carrent,
   jobit,
   tripguide,
+  python,
+  django,
+  fastapi,
+  pytorch,
+  tensorflow,
+  sql,
+  flask,
+  sklearn,
+  huggingface,
+  sybrid,
+  daxno,
+  ceai,
+  stockgenie,
+  croprec,
+  resumeanalyzer,
+  globaltalk,
+  airbnbanalysis
 };

@@ -32,6 +32,23 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  django,
+  fastapi,
+  pytorch,
+  tensorflow,
+  sql,
+  flask,
+  sklearn,
+  huggingface,
+  sybrid,
+  daxno,
+  ceai,
+  stockgenie,
+  croprec,
+  resumeanalyzer,
+  globaltalk,
+  airbnbanalysis,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -51,223 +68,260 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Engineer",
     icon: creator,
+  },
+  {
+    title: "Data Scientist",
+    icon: web,
+  },
+  {
+    title: "Full Stack Developer",
+    icon: mobile,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Django",
+    icon: django,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "FastAPI",
+    icon: fastapi,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "PyTorch",
+    icon: pytorch,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "SQL",
+    icon: sql,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Docker",
+    icon: docker,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Flask",
+    icon: flask,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Scikit-learn",
+    icon: sklearn,
+  },
+  {
+    name: "Hugging Face",
+    icon: huggingface,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Data Science Intern",
+    companyName: "Sybrid Pvt LTD",
+    icon: sybrid,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2024 - October 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed the frontend for Sybrid HRBot using React.js and connected it with Django for internal employee query resolution.",
+      "Designed and implemented the frontend for KissanBot and created a dummy backend using Flask for testing.",
+      "Built a Django application to secure internal company data and enable audio annotation by interns.",
+      "Developed AgriVoice Tool in Django for creating a labeled audio dataset for Kissan Bot.",
+      "Annotated the CS North dataset for further processing and analysis.",
+      "Tested stable diffusion-based ToonCrafter model on images to generate animated video frames."
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "Software Engineering Intern",
+    companyName: "Daxno Technologies",
+    icon: daxno,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2023 - November 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in research, development, and prototyping of product ideas.",
+      "Contributed to software architecture design, feature testing, and optimization of early-stage software products.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "Machine Learning Intern",
+    companyName: "Center of Excellence in Artificial Intelligence",
+    icon: ceai,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "September 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and implemented an audio classification model for a government organization.",
+      "Contributed to enhanced data analysis capabilities and performed model optimization.",
     ],
   },
 ];
 
 const testimonials: TTestimonial[] = [
+  // Add your professors' testimonials
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "During his undergraduate studies, Arslan proved himself to be a talented and dedicated student. His academic achievements speak highly of his commitment.",
+    name: "Prof. Dr. Arif ur Rehman",
+    designation: "Professor",
+    company: "Bahria University",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKodT8NgCwEnFRC02GnO4IhYAIXymCWz2DQQ&s", // Replace with actual image or appropriate placeholder
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Arslan is intelligent, reliable, and committed. His academic achievements and active involvement speak highly of his dedication to computer science.",
+    name: "Saima Jawad",
+    designation: "Senior Associate Professor",
+    company: "Bahria University",
+    image: "https://png.pngtree.com/png-vector/20221125/ourmid/pngtree-no-image-available-icon-flatvector-illustration-picture-coming-creative-vector-png-image_40968940.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Arslan is capable of working independently and has a gentle personality. He is keen to solve problems and is a hard worker.",
+    name: "Dr Muhammad Murtaza Khan",
+    designation: "Chief Innovation Officer",
+    company: "Sybrid Pvt LTD",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEKnwGAXG1-Aw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699861905014?e=2147483647&v=beta&t=nPnig4CL4SgYQkcq40lgQPWp6HZJz18DJmpjHGscsd0",
   },
+  {
+    testimonial:
+      "His attention to detail and problem-solving skills during the development of our machine learning models was exceptional.",
+    name: "Research Director",
+    designation: "Director",
+    company: "Center of Excellence in AI",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+  },
+  
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "StockGenie",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI-powered stock trading web application with financial sentiment analysis (FinBERT) and automated trading features. Built with React, Django, PostgreSQL, Redis, and Celery.",
     tags: [
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "finbert",
         color: "pink-text-gradient",
       },
+      {
+        name: "redis",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: stockgenie,
+    sourceCodeLink: "https://github.com/arslan-sb/stockgenie",
   },
   {
-    name: "Job IT",
+    name: "Crop Recommendation System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Machine learning-based system offering personalized crop recommendations based on soil and climate data. Implemented decision trees and random forest algorithms with a Streamlit interface.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "machine-learning",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "streamlit",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: croprec,
+    sourceCodeLink: "https://github.com/arslan-sb/crop-recommendation",
   },
   {
-    name: "Trip Guide",
+    name: "Resume Analyzer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "NLP-powered application for analyzing CVs using cosine similarity and ML for information extraction. Identifies top candidates based on employer requirements.",
     tags: [
       {
-        name: "nextjs",
+        name: "nlp",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "python",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "ml",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: resumeanalyzer,
+    sourceCodeLink: "https://github.com/arslan-sb/resume-analyzer",
+  },
+  {
+    name: "Global Talk",
+    description:
+      "Real-time multilingual chat application using Flutter and Python. Integrates Firebase for messaging, Google TTS for speech synthesis, and an NLP-based translation model.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nlp",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: globaltalk,
+    sourceCodeLink: "https://github.com/arslan-sb/global-talk",
+  },
+  {
+    name: "Airbnb Data Analysis",
+    description:
+      "Performed extensive data cleaning and exploratory analysis on Airbnb listings dataset. Applied ML techniques to predict rental prices based on location, amenities, and seasonal trends.",
+    tags: [
+      {
+        name: "pandas",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "data-science",
+        color: "green-text-gradient",
+      },
+      {
+        name: "visualization",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: airbnbanalysis,
+    sourceCodeLink: "https://github.com/arslan-sb/airbnb-analysis",
   },
 ];
 

@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Arslan Shaukat — 3D Portfolio",
+    title: "Arslan Shaukat — Portfolio",
     fullName: "Arslan Shaukat",
-    email: "johndoe@mail.com",
+    email: "arslanshaukat009@gmail.com",
   },
   hero: {
     name: "Arslan Shaukat",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    p: ["I develop AI solutions and", "backend systems for robust applications"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a skilled backend and AI developer with expertise in Python, Django, FastAPI, 
+      and machine learning frameworks like PyTorch and TensorFlow. I specialize in building 
+      robust backend systems and AI solutions that solve real-world problems. With experience 
+      in image and data processing, NLP, and full-stack development, I can create efficient, scalable 
+      solutions tailored to your specific needs. Let's collaborate to bring innovative ideas to life!`,
     },
     experience: {
       p: "What I have done so far",
@@ -82,13 +82,13 @@ export const config: TConfig = {
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      p: "My projects",
+      h2: "Portfolio.",
+      content: `The following projects showcase my skills in backend development, AI, and 
+      machine learning. Each project demonstrates my ability to solve complex problems, 
+      work with cutting-edge technologies, and deliver robust, efficient solutions. From 
+      AI-powered applications to scalable backend systems, my work reflects both technical 
+      expertise and practical implementation.`,
     },
   },
 };
