@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  SocialSidebar,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="bg-primary relative z-0">
+        <SocialSidebar />
         <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
           <Navbar />
           <Hero />

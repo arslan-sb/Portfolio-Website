@@ -46,6 +46,9 @@ import croprec from "./croprec.png";
 import resumeanalyzer from "./resumeanalyzer.png";
 import globaltalk from "./globaltalk.jpg";
 import airbnbanalysis from "./airbnbanalysis.png";
+import resumelogo from './resume.png'
+import cvlogo from './cvlogo.jpg'
+import profilelogo from './profilelogo.png'
 
 export {
   logo,
@@ -92,5 +95,8 @@ export {
   croprec,
   resumeanalyzer,
   globaltalk,
-  airbnbanalysis
+  airbnbanalysis,
+  resumelogo,
+  cvlogo,
+  profilelogo
 };

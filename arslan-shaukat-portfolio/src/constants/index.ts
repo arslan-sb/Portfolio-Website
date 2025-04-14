@@ -164,6 +164,17 @@ const experiences: TExperience[] = [
     ],
   },
   {
+    title: "Freelance Programmer (Level 2 Seller)",
+    companyName: "Fiverr",
+    icon: "https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2025040710", // Placeholder icon until Fiverr icon is added
+    iconBg: "#383E56", // Fiverr's brand green color
+    date: "June 2022 - June 2023",
+    points: [
+      "Developed JavaScript, Python, C and C++ projects for over 70 clients.",
+      "Provided efficient and tailored solutions while meeting deadlines.",
+    ],
+  },
+  {
     title: "Machine Learning Intern",
     companyName: "Center of Excellence in Artificial Intelligence",
     icon: ceai,
