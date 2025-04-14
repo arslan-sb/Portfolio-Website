@@ -41,6 +41,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 };
