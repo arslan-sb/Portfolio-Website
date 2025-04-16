@@ -16,18 +16,18 @@ const socialLinks = [
     url: "https://www.linkedin.com/in/arslanshaukatsb/",
     isText: false,
   },
-  {
-    name: "Twitter",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
-    url: "https://twitter.com/arslanshaukatsb",
-    isText: false,
-  },
-  {
-    name: "Kaggle",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
-    url: "https://www.kaggle.com/arslanchaudhary",
-    isText: false,
-  },
+  // {
+  //   name: "Twitter",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
+  //   url: "https://twitter.com/arslanshaukatsb",
+  //   isText: false,
+  // },
+  // {
+  //   name: "Kaggle",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
+  //   url: "https://www.kaggle.com/arslanchaudhary",
+  //   isText: false,
+  // },
   {
     name: "CV",
     text: "CV",
