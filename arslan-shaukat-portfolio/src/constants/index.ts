@@ -138,18 +138,26 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
+    title: "Software Developer",
+    companyName: "RMCAANA",
+    icon: "https://rmcdocs.org/wp-content/uploads/2024/02/cropped-banner-logo-removebg-preview.png", // Replace with official RMCAANA logo
+    iconBg: "#1a1a2e",
+    date: "Dec 2024 - May 2026",
+    points: [
+      "Membership Portal: Architected a React-based membership portal deployed on AWS EC2, driving a 60% increase in active membership (250 → 400 members) through automated registration and renewal workflows.",
+      "Observership Portal: Building a Next.js 14 + PostgreSQL portal with branching email routing via AWS SES and document storage on AWS S3.",
+      "Digital Infrastructure: Developed a secure document repository for financial transparency and migrated legacy WordPress systems to high-performance hosting, reducing operational overhead.",
+    ],
+  },
+  {
     title: "Data Science Intern",
     companyName: "Sybrid Pvt LTD",
     icon: sybrid,
     iconBg: "#383E56",
     date: "May 2024 - October 2024",
     points: [
-      "Developed the frontend for Sybrid HRBot using React.js and connected it with Django for internal employee query resolution.",
-      "Designed and implemented the frontend for KissanBot and created a dummy backend using Flask for testing.",
-      "Built a Django application to secure internal company data and enable audio annotation by interns.",
-      "Developed AgriVoice Tool in Django for creating a labeled audio dataset for Kissan Bot.",
-      "Annotated the CS North dataset for further processing and analysis.",
-      "Tested stable diffusion-based ToonCrafter model on images to generate animated video frames."
+      "AI Conversational Agents: Engineered Sybrid HRBot using Django/React and a RAG pipeline (ChatGPT API) for policy-based query resolution; developed the frontend for KissanBot, a commercial agricultural AI assistant.",
+      "Media & Generative AI: Built Django-based tools for secure audio streaming and AI-assisted dataset labeling (AgriVoice); evaluated Stable Diffusion (ToonCrafter) for automated storybook-to-animation workflows.",
     ],
   },
   {
