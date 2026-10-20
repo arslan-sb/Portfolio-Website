@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
@@ -15,6 +16,24 @@ const initials = (name: string) =>
     .slice(0, 2)
     .map((part) => part[0])
     .join("");
+
+// Remote photos can expire or be hotlink-blocked, so fall back to initials
+const Avatar: React.FC<{ name: string; image?: string }> = ({ name, image }) => {
+  const [failed, setFailed] = useState(false);
+
+  return image && !failed ? (
+    <img
+      src={image}
+      alt={`feedback_by-${name}`}
+      className="h-10 w-10 rounded-full object-cover"
+      onError={() => setFailed(true)}
+    />
+  ) : (
+    <div className="green-pink-gradient flex h-10 w-10 items-center justify-center rounded-full text-[14px] font-bold text-white">
+      {initials(name)}
+    </div>
+  );
+};
 
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   index,
@@ -43,17 +62,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
           </p>
         </div>
 
-        {image ? (
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="h-10 w-10 rounded-full object-cover"
-          />
-        ) : (
-          <div className="green-pink-gradient flex h-10 w-10 items-center justify-center rounded-full text-[14px] font-bold text-white">
-            {initials(name)}
-          </div>
-        )}
+        <Avatar name={name} image={image} />
       </div>
     </div>
   </motion.div>

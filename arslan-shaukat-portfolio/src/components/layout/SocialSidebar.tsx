@@ -1,5 +1,6 @@
 // import React from "react";
-import { github } from "../../assets";
+import { github, linkedin } from "../../assets";
+import { config } from "../../constants/config";
 import { motion } from "framer-motion";
 
 // Define social media links
@@ -12,7 +13,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+    icon: linkedin,
     url: "https://www.linkedin.com/in/arslanshaukatsb/",
     isText: false,
   },
@@ -31,7 +32,7 @@ const socialLinks = [
   {
     name: "Email",
     text: "@",
-    url: "mailto:arslanshaukat009@gmail.com",
+    url: `mailto:${config.html.email}`,
     isText: true,
   },
   {

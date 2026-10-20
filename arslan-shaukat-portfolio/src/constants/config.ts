@@ -46,7 +46,7 @@ export const config: TConfig = {
   html: {
     title: "Arslan Shaukat — Portfolio",
     fullName: "Arslan Shaukat",
-    email: "arslanshaukat009@gmail.com",
+    email: "muhammad_arslan.shaukat@mailbox.tu-dresden.de",
   },
   hero: {
     name: "Arslan Shaukat",

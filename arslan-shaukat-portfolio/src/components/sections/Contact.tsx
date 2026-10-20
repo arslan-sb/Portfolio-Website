@@ -78,7 +78,7 @@ const Contact = () => {
           {config.contact.content} Prefer email? Write to{" "}
           <a
             href={`mailto:${config.html.email}`}
-            className="font-semibold text-white underline"
+            className="break-all font-semibold text-white underline"
           >
             {config.html.email}
           </a>

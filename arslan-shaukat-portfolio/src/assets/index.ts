@@ -40,6 +40,9 @@ import tesla from "./company/tesla.png";
 import sybrid from "./company/sybrid.png";
 import daxno from "./company/daxno.png";
 import ceai from "./company/coeai.jpeg";
+import rmcaana from "./company/rmcaana.svg";
+import fiverr from "./company/fiverr.svg";
+import linkedin from "./linkedin.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -103,6 +106,9 @@ export {
   sybrid,
   daxno,
   ceai,
+  rmcaana,
+  fiverr,
+  linkedin,
   stockgenie,
   croprec,
   resumeanalyzer,

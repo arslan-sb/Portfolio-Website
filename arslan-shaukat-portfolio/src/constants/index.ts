@@ -29,6 +29,8 @@ import {
   sybrid,
   daxno,
   ceai,
+  rmcaana,
+  fiverr,
   stockgeniecover,
   foursight,
   kahawa,
@@ -165,7 +167,7 @@ const experiences: TExperience[] = [
   {
     title: "Software Developer",
     companyName: "RMCAANA Inc. · Remote",
-    icon: "https://rmcdocs.org/wp-content/uploads/2024/02/cropped-banner-logo-removebg-preview.png", // Replace with official RMCAANA logo
+    icon: rmcaana,
     iconBg: "#1a1a2e",
     date: "Dec 2024 - May 2026",
     points: [
@@ -190,7 +192,7 @@ const experiences: TExperience[] = [
   {
     title: "Freelance Web Developer (Level 2 Seller)",
     companyName: "Fiverr · Remote",
-    icon: "https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2025040710", // Placeholder icon until Fiverr icon is added
+    icon: fiverr,
     iconBg: "#383E56",
     date: "Jul 2022 - Jun 2024",
     points: [
@@ -274,32 +276,6 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "4sight",
-    award: "Runner-up · Infineon Venture Hack 2026",
-    description:
-      "Python backend for an agentic risk platform. Jira Cloud data feeds a dependency graph (NetworkX) modelling how risk propagates between tasks; FastMCP servers expose it as tools to a DeepSeek LLM agent, with ChromaDB retrieval over project history.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mcp",
-        color: "green-text-gradient",
-      },
-      {
-        name: "llm-agents",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "chromadb",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: foursight,
-    sourceCodeLink: "https://github.com/arslan-sb/4sight",
-  },
-  {
     name: "Kahawa",
     award: "World Bank Small AI Hackathon 2026",
     description:
@@ -324,6 +300,32 @@ const projects: TProject[] = [
     ],
     image: kahawa,
     liveLink: "https://kahawa.site",
+  },
+  {
+    name: "4sight",
+    award: "Runner-up · Infineon Venture Hack 2026",
+    description:
+      "Python backend for an agentic risk platform. Jira Cloud data feeds a dependency graph (NetworkX) modelling how risk propagates between tasks; FastMCP servers expose it as tools to a DeepSeek LLM agent, with ChromaDB retrieval over project history.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mcp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "llm-agents",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "chromadb",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: foursight,
+    sourceCodeLink: "https://github.com/arslan-sb/4sight",
   },
   {
     name: "Kissan Voice",
