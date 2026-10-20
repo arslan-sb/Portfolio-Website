@@ -16,6 +16,8 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  liveLink,
+  award,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,21 +35,42 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               alt={name}
               className="h-full w-full rounded-2xl object-cover"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-              <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-1/2 w-1/2 object-contain"
-                />
-              </div>
+            <div className="card-img_hover absolute inset-0 m-3 flex justify-end gap-2">
+              {liveLink && (
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Live demo"
+                  className="black-gradient flex h-10 cursor-pointer items-center justify-center rounded-full px-4 text-[12px] font-bold text-white"
+                >
+                  Live ↗
+                </a>
+              )}
+              {sourceCodeLink && (
+                <a
+                  href={sourceCodeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Source code"
+                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                >
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              )}
             </div>
           </div>
           <div className="mt-5">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
+            {award && (
+              <p className="mt-1 text-[13px] font-semibold text-[#915EFF]">
+                {award}
+              </p>
+            )}
             <p className="text-secondary mt-2 text-[14px]">{description}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
@@ -86,4 +109,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

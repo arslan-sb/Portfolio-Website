@@ -15,7 +15,8 @@ export type TTestimonial = {
   testimonial: string;
   designation: string;
   company: string;
-  image: string;
+  // Falls back to the person's initials when no photo is available
+  image?: string;
 } & Required<Pick<TCommonProps, "name">>;
 
 export type TProject = {
@@ -25,8 +26,23 @@ export type TProject = {
     color: string;
   }[];
   image: string;
-  sourceCodeLink: string;
+  sourceCodeLink?: string;
+  liveLink?: string;
+  award?: string;
 } & Required<Pick<TCommonProps, "name">>;
+
+export type TEducation = {
+  degree: string;
+  school: string;
+  location: string;
+  date: string;
+  details: string[];
+};
+
+export type TSkillGroup = {
+  title: string;
+  skills: string[];
+};
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;
 

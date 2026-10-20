@@ -29,6 +29,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.svg";
+import aws from "./tech/aws.svg";
+import postgresql from "./tech/postgresql.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -46,6 +49,12 @@ import croprec from "./croprec.png";
 import resumeanalyzer from "./resumeanalyzer.png";
 import globaltalk from "./globaltalk.jpg";
 import airbnbanalysis from "./airbnbanalysis.png";
+import foursight from "./projects/4sight.svg";
+import kahawa from "./projects/kahawa.svg";
+import kissanvoice from "./projects/kissanvoice.svg";
+import osconstruction from "./projects/osconstruction.svg";
+import ocrcaptcha from "./projects/ocrcaptcha.svg";
+import stockgeniecover from "./projects/stockgenie.svg";
 import resumelogo from './resume.png'
 import cvlogo from './cvlogo.jpg'
 import profilelogo from './profilelogo.png'
@@ -72,6 +81,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  nextjs,
+  aws,
+  postgresql,
   meta,
   shopify,
   starbucks,
@@ -96,6 +108,12 @@ export {
   resumeanalyzer,
   globaltalk,
   airbnbanalysis,
+  foursight,
+  kahawa,
+  kissanvoice,
+  osconstruction,
+  ocrcaptcha,
+  stockgeniecover,
   resumelogo,
   cvlogo,
   profilelogo

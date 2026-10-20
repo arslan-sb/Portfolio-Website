@@ -74,6 +74,42 @@ const Contact = () => {
         className="bg-black-100 flex-[0.75] rounded-2xl p-8"
       >
         <Header useMotion={false} {...config.contact} />
+        <p className="text-secondary mt-4 text-[15px] leading-[26px]">
+          {config.contact.content} Prefer email? Write to{" "}
+          <a
+            href={`mailto:${config.html.email}`}
+            className="font-semibold text-white underline"
+          >
+            {config.html.email}
+          </a>
+          .
+        </p>
+        <div className="mt-4 flex flex-wrap gap-4 text-[15px] font-semibold">
+          <a
+            href="https://github.com/arslan-sb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arslanshaukatsb/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={config.hero.cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline"
+          >
+            CV (PDF)
+          </a>
+        </div>
 
         <form
           // @ts-expect-error

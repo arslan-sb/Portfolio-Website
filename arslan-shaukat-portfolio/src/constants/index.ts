@@ -5,6 +5,8 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  TEducation,
+  TSkillGroup,
 } from "../types";
 
 import {
@@ -12,43 +14,27 @@ import {
   backend,
   creator,
   web,
-  // javascript,
-  // typescript,
-  // html,
-  // css,
+  typescript,
   reactjs,
-  // redux,
-  // tailwind,
-  // nodejs,
-  // mongodb,
+  nextjs,
+  aws,
+  postgresql,
   git,
-  // figma,
   docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
-  // carrent,
-  // jobit,
-  // tripguide,
-  // threejs,
   python,
   django,
   fastapi,
   pytorch,
-  tensorflow,
-  sql,
-  flask,
-  sklearn,
   huggingface,
   sybrid,
   daxno,
   ceai,
-  stockgenie,
-  croprec,
-  resumeanalyzer,
-  globaltalk,
-  airbnbanalysis,
+  stockgeniecover,
+  foursight,
+  kahawa,
+  kissanvoice,
+  osconstruction,
+  ocrcaptcha,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -58,7 +44,11 @@ export const navLinks: TNavLink[] = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -68,19 +58,19 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Backend Developer",
+    title: "Backend Engineering",
     icon: backend,
   },
   {
-    title: "AI Engineer",
+    title: "AI & LLM Systems",
     icon: creator,
   },
   {
-    title: "Data Scientist",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "Full Stack Developer",
+    title: "Cloud & DevOps",
     icon: mobile,
   },
 ];
@@ -91,6 +81,18 @@ const technologies: TTechnology[] = [
     icon: python,
   },
   {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
     name: "Django",
     icon: django,
   },
@@ -99,111 +101,159 @@ const technologies: TTechnology[] = [
     icon: fastapi,
   },
   {
-    name: "PyTorch",
-    icon: pytorch,
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
-    name: "TensorFlow",
-    icon: tensorflow,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "SQL",
-    icon: sql,
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "Docker",
     icon: docker,
   },
   {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "Flask",
-    icon: flask,
-  },
-  {
-    name: "Scikit-learn",
-    icon: sklearn,
+    name: "PyTorch",
+    icon: pytorch,
   },
   {
     name: "Hugging Face",
     icon: huggingface,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+];
+
+const skillGroups: TSkillGroup[] = [
+  {
+    title: "Languages",
+    skills: ["Python", "TypeScript / JavaScript", "Java", "C / C++", "SQL", "x86 Assembly"],
+  },
+  {
+    title: "Backend & Web",
+    skills: ["Django", "FastAPI", "Flask", "Spring Boot", "Node.js", "REST APIs", "React", "Next.js"],
+  },
+  {
+    title: "Data & Messaging",
+    skills: ["PostgreSQL", "MySQL", "Redis", "Celery", "Kafka", "Pandas"],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: ["AWS (EC2, Lambda, S3, RDS, SES)", "Docker", "CI/CD", "Linux", "Git / GitHub"],
+  },
+  {
+    title: "AI & LLM Systems",
+    skills: ["RAG pipelines", "LLM agents", "MCP servers", "ChromaDB", "Whisper", "Hugging Face", "Claude Code"],
+  },
+  {
+    title: "Machine Learning",
+    skills: ["PyTorch", "scikit-learn", "OpenCV", "CUDA", "FinBERT"],
+  },
+  {
+    title: "Testing",
+    skills: ["Pytest", "Unittest", "K6", "JMeter"],
+  },
+  {
+    title: "Spoken Languages",
+    skills: ["English (C1)", "German (A2, working toward B1)", "Urdu / Punjabi (native)"],
   },
 ];
 
 const experiences: TExperience[] = [
   {
     title: "Software Developer",
-    companyName: "RMCAANA",
+    companyName: "RMCAANA Inc. · Remote",
     icon: "https://rmcdocs.org/wp-content/uploads/2024/02/cropped-banner-logo-removebg-preview.png", // Replace with official RMCAANA logo
     iconBg: "#1a1a2e",
     date: "Dec 2024 - May 2026",
     points: [
-      "Membership Portal: Architected a React-based membership portal deployed on AWS EC2, driving a 60% increase in active membership (250 → 400 members) through automated registration and renewal workflows.",
-      "Observership Portal: Building a Next.js 14 + PostgreSQL portal with branching email routing via AWS SES and document storage on AWS S3.",
-      "Digital Infrastructure: Developed a secure document repository for financial transparency and migrated legacy WordPress systems to high-performance hosting, reducing operational overhead.",
+      "Membership Platform: Built the association's membership system as microservices on AWS, with a React front end over Django and Flask REST services backed by PostgreSQL on RDS. Automating registration and renewal grew active membership by 60% (250 → 400).",
+      "Observership Portal: Built the Next.js 14 and PostgreSQL backend that carries applicants from application to placement, with conditional email routing via AWS SES and document storage on S3 replacing manual handling.",
+      "Cloud & Delivery: Ran the estate on AWS (EC2, Lambda, S3, RDS, SES) with CI/CD pipelines, and migrated the legacy WordPress site to AWS to cut hosting costs and load times.",
+      "Reliability: Wrote Pytest suites for the registration, renewal and payment paths and load tested with K6 and JMeter ahead of the annual renewal window; tuned PostgreSQL indexes and queries as records grew.",
     ],
   },
   {
     title: "Data Science Intern",
-    companyName: "Sybrid Pvt LTD",
+    companyName: "Sybrid Pvt Ltd (Lakson Group) · Islamabad",
     icon: sybrid,
     iconBg: "#383E56",
-    date: "May 2024 - October 2024",
+    date: "May 2024 - Oct 2024",
     points: [
-      "AI Conversational Agents: Engineered Sybrid HRBot using Django/React and a RAG pipeline (ChatGPT API) for policy-based query resolution; developed the frontend for KissanBot, a commercial agricultural AI assistant.",
-      "Media & Generative AI: Built Django-based tools for secure audio streaming and AI-assisted dataset labeling (AgriVoice); evaluated Stable Diffusion (ToonCrafter) for automated storybook-to-animation workflows.",
+      "Conversational AI: Built Sybrid HRBot on Django and React with a RAG pipeline over the internal policy corpus, so staff could ask plain-language questions instead of searching PDFs. Developed the frontend for KissanBot, later launched as a commercial agricultural assistant.",
+      "AudioStream: Built a secure Django + HLS.js streaming platform so the team could listen to and transcribe confidential recordings for the AgriVoice dataset without ever downloading the raw files.",
+      "Generative AI: Created Django tooling for dataset labelling and benchmarked Stable Diffusion (ToonCrafter) for storybook-to-animation workflows before the team committed to it.",
     ],
   },
   {
-    title: "Software Engineering Intern",
-    companyName: "Daxno Technologies",
+    title: "Freelance Web Developer (Level 2 Seller)",
+    companyName: "Fiverr · Remote",
+    icon: "https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2025040710", // Placeholder icon until Fiverr icon is added
+    iconBg: "#383E56",
+    date: "Jul 2022 - Jun 2024",
+    points: [
+      "Reached Level 2 seller status delivering Python, JavaScript, C and C++ projects for international clients.",
+      "Every engagement started from an unclear brief, so the work was as much scoping, estimating and surfacing risks early as writing code.",
+    ],
+  },
+  {
+    title: "Machine Learning Intern",
+    companyName: "Center of Excellence in Artificial Intelligence · Islamabad",
+    icon: ceai,
+    iconBg: "#383E56",
+    date: "Sep 2022 - May 2023",
+    points: [
+      "Developed and implemented an audio classification model for a government organization.",
+      "Worked on model development, experimentation and optimization alongside academic staff in the university research group.",
+    ],
+  },
+  {
+    title: "Application Developer",
+    companyName: "Daxno Technologies · Rawalpindi",
     icon: daxno,
     iconBg: "#E6DEDD",
-    date: "June 2023 - November 2023",
+    date: "Jun 2022 - Sep 2022",
     points: [
       "Assisted in research, development, and prototyping of product ideas.",
       "Contributed to software architecture design, feature testing, and optimization of early-stage software products.",
     ],
   },
+];
+
+const education: TEducation[] = [
   {
-    title: "Freelance Programmer (Level 2 Seller)",
-    companyName: "Fiverr",
-    icon: "https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2025040710", // Placeholder icon until Fiverr icon is added
-    iconBg: "#383E56", // Fiverr's brand green color
-    date: "June 2022 - June 2023",
-    points: [
-      "Developed JavaScript, Python, C and C++ projects for over 70 clients.",
-      "Provided efficient and tailored solutions while meeting deadlines.",
+    degree: "M.Sc. Computer Science",
+    school: "Technische Universität Dresden",
+    location: "Dresden, Germany",
+    date: "Apr 2026 - Mar 2028 (expected)",
+    details: [
+      "Focus: Machine Learning, High Performance Computing, System Architecture",
+      "Coursework includes Operating System Construction and Machine Learning for Robotics",
     ],
   },
   {
-    title: "Machine Learning Intern",
-    companyName: "Center of Excellence in Artificial Intelligence",
-    icon: ceai,
-    iconBg: "#383E56",
-    date: "September 2022 - May 2023",
-    points: [
-      "Developed and implemented an audio classification model for a government organization.",
-      "Contributed to enhanced data analysis capabilities and performed model optimization.",
+    degree: "B.Sc. Computer Science",
+    school: "Bahria University",
+    location: "Islamabad, Pakistan",
+    date: "Mar 2021 - Feb 2025",
+    details: [
+      "CGPA 3.38 / 4.0 (German grade 1.9)",
+      "Focus: Artificial Intelligence, NLP, Digital Image Processing",
+      "1st Place, Speed Programming Competition 2022",
     ],
   },
 ];
 
 const testimonials: TTestimonial[] = [
-  // Add your professors' testimonials
   {
     testimonial:
       "During his undergraduate studies, Arslan proved himself to be a talented and dedicated student. His academic achievements speak highly of his commitment.",
     name: "Prof. Dr. Arif ur Rehman",
     designation: "Professor",
     company: "Bahria University",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKodT8NgCwEnFRC02GnO4IhYAIXymCWz2DQQ&s", // Replace with actual image or appropriate placeholder
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKodT8NgCwEnFRC02GnO4IhYAIXymCWz2DQQ&s",
   },
   {
     testimonial:
@@ -211,7 +261,6 @@ const testimonials: TTestimonial[] = [
     name: "Saima Jawad",
     designation: "Senior Associate Professor",
     company: "Bahria University",
-    image: "https://png.pngtree.com/png-vector/20221125/ourmid/pngtree-no-image-available-icon-flatvector-illustration-picture-coming-creative-vector-png-image_40968940.jpg",
   },
   {
     testimonial:
@@ -221,22 +270,112 @@ const testimonials: TTestimonial[] = [
     company: "Sybrid Pvt LTD",
     image: "https://media.licdn.com/dms/image/v2/D5603AQEKnwGAXG1-Aw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699861905014?e=2147483647&v=beta&t=nPnig4CL4SgYQkcq40lgQPWp6HZJz18DJmpjHGscsd0",
   },
-  {
-    testimonial:
-      "His attention to detail and problem-solving skills during the development of our machine learning models was exceptional.",
-    name: "Research Director",
-    designation: "Director",
-    company: "Center of Excellence in AI",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
-  },
-  
 ];
 
 const projects: TProject[] = [
   {
-    name: "StockGenie",
+    name: "4sight",
+    award: "Runner-up · Infineon Venture Hack 2026",
     description:
-      "AI-powered stock trading web application with financial sentiment analysis (FinBERT) and automated trading features. Built with React, Django, PostgreSQL, Redis, and Celery.",
+      "Python backend for an agentic risk platform. Jira Cloud data feeds a dependency graph (NetworkX) modelling how risk propagates between tasks; FastMCP servers expose it as tools to a DeepSeek LLM agent, with ChromaDB retrieval over project history.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mcp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "llm-agents",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "chromadb",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: foursight,
+    sourceCodeLink: "https://github.com/arslan-sb/4sight",
+  },
+  {
+    name: "Kahawa",
+    award: "World Bank Small AI Hackathon 2026",
+    description:
+      "Offline Swahili voice reports for farmers. Whisper speech recognition and a Qwen 2.5 extractor run on CPU, with a confidence-gated fail-safe that routes unclear reports to a human reviewer.",
+    tags: [
+      {
+        name: "whisper",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "qwen2.5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: kahawa,
+    liveLink: "https://kahawa.site",
+  },
+  {
+    name: "Kissan Voice",
+    description:
+      "Event-driven Spring Boot backend that captures and manages voice-recording data end to end, with a transactional outbox for reliable event delivery and a resilient CRM integration using retries, circuit breakers and dead-letter queues.",
+    tags: [
+      {
+        name: "java21",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "spring-boot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "kafka",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "aws-s3",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: kissanvoice,
+    sourceCodeLink: "https://github.com/arslan-sb/Kissan-Voicee",
+  },
+  {
+    name: "OS Construction",
+    description:
+      "A 64-bit operating system that boots on real hardware, written in freestanding C++ and x86-64 assembly at TU Dresden: PS/2 and CGA drivers, PIC interrupt dispatch with prologue/epilogue halves, a hand-written context switch, preemptive scheduling and semaphores.",
+    tags: [
+      {
+        name: "c++",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "x86-64",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bare-metal",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: osconstruction,
+    sourceCodeLink: "https://github.com/arslan-sb/Operating-System-Construction",
+  },
+  {
+    name: "StockGenie",
+    award: "Bachelor Thesis",
+    description:
+      "Full-stack trading platform: a Django and PostgreSQL backend ingests live market data concurrently through Redis and Celery, with LSTM price forecasting, FinBERT news sentiment per stock, and strategy backtesting.",
     tags: [
       {
         name: "django",
@@ -251,97 +390,42 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
       {
-        name: "redis",
+        name: "celery",
         color: "orange-text-gradient",
       },
     ],
-    image: stockgenie,
-    sourceCodeLink: "https://github.com/arslan-sb/stockgenie",
+    image: stockgeniecover,
+    sourceCodeLink: "https://github.com/arslan-sb/StockGeniee",
   },
   {
-    name: "Crop Recommendation System",
+    name: "OCR-Captcha",
     description:
-      "Machine learning-based system offering personalized crop recommendations based on soil and climate data. Implemented decision trees and random forest algorithms with a Streamlit interface.",
+      "CAPTCHA text recognition in PyTorch using a CRNN trained with CTC loss on a custom dataset, benchmarked against a Tesseract OCR baseline.",
     tags: [
       {
-        name: "python",
+        name: "pytorch",
         color: "blue-text-gradient",
       },
       {
-        name: "machine-learning",
+        name: "computer-vision",
         color: "green-text-gradient",
       },
       {
-        name: "streamlit",
+        name: "ocr",
         color: "pink-text-gradient",
       },
     ],
-    image: croprec,
-    sourceCodeLink: "https://github.com/arslan-sb/crop-recommendation",
-  },
-  {
-    name: "Resume Analyzer",
-    description:
-      "NLP-powered application for analyzing CVs using cosine similarity and ML for information extraction. Identifies top candidates based on employer requirements.",
-    tags: [
-      {
-        name: "nlp",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "python",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ml",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: resumeanalyzer,
-    sourceCodeLink: "https://github.com/arslan-sb/resume-analyzer",
-  },
-  {
-    name: "Global Talk",
-    description:
-      "Real-time multilingual chat application using Flutter and Python. Integrates Firebase for messaging, Google TTS for speech synthesis, and an NLP-based translation model.",
-    tags: [
-      {
-        name: "flutter",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nlp",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: globaltalk,
-    sourceCodeLink: "https://github.com/arslan-sb/global-talk",
-  },
-  {
-    name: "Airbnb Data Analysis",
-    description:
-      "Performed extensive data cleaning and exploratory analysis on Airbnb listings dataset. Applied ML techniques to predict rental prices based on location, amenities, and seasonal trends.",
-    tags: [
-      {
-        name: "pandas",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "data-science",
-        color: "green-text-gradient",
-      },
-      {
-        name: "visualization",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: airbnbanalysis,
-    sourceCodeLink: "https://github.com/arslan-sb/airbnb-analysis",
+    image: ocrcaptcha,
+    sourceCodeLink: "https://github.com/arslan-sb/OCR-Captcha",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  skillGroups,
+  experiences,
+  education,
+  testimonials,
+  projects,
+};

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 import {
   About,
   Contact,
+  Education,
   Experience,
   Feedbacks,
   Hero,
@@ -33,8 +34,9 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
         <Works />
+        <Tech />
+        <Education />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />

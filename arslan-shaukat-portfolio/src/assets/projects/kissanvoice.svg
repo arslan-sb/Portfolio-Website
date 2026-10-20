@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="460" viewBox="0 0 600 460">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3b2a0f"/><stop offset="1" stop-color="#e0a33a"/></linearGradient></defs>
+  <rect width="600" height="460" fill="url(#g)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3">
+      <rect x="330" y="120" width="70" height="50" rx="8"/><rect x="460" y="120" width="70" height="50" rx="8"/>
+      <rect x="395" y="250" width="70" height="50" rx="8"/>
+      <path d="M400 145 H460 M495 170 L450 250 M365 170 L410 250"/></g>
+    <g fill="#fff"><circle cx="430" cy="145" r="6"/><circle cx="472" cy="210" r="6"/><circle cx="388" cy="210" r="6"/></g>
+  <text x="40" y="405" fill="#fff" fill-opacity=".85" font-family="Poppins, Helvetica, Arial, sans-serif" font-size="26" font-weight="600">Event-driven backend</text>
+</svg>

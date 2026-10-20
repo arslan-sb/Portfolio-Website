@@ -7,6 +7,15 @@ import { Header } from "../atoms/Header";
 import { TTestimonial } from "../../types";
 import { config } from "../../constants/config";
 
+const initials = (name: string) =>
+  name
+    .replace(/^(Prof\.|Dr\.?)\s+/g, "")
+    .split(" ")
+    .filter((part) => /^[A-Z]/.test(part))
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("");
+
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   index,
   testimonial,
@@ -34,11 +43,17 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
           </p>
         </div>
 
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="h-10 w-10 rounded-full object-cover"
-        />
+        {image ? (
+          <img
+            src={image}
+            alt={`feedback_by-${name}`}
+            className="h-10 w-10 rounded-full object-cover"
+          />
+        ) : (
+          <div className="green-pink-gradient flex h-10 w-10 items-center justify-center rounded-full text-[14px] font-bold text-white">
+            {initials(name)}
+          </div>
+        )}
       </div>
     </div>
   </motion.div>

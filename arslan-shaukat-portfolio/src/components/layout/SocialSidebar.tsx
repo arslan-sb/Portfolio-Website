@@ -1,5 +1,5 @@
 // import React from "react";
-import { github, profilelogo } from "../../assets";
+import { github } from "../../assets";
 import { motion } from "framer-motion";
 
 // Define social media links
@@ -29,18 +29,16 @@ const socialLinks = [
   //   isText: false,
   // },
   {
+    name: "Email",
+    text: "@",
+    url: "mailto:arslanshaukat009@gmail.com",
+    isText: true,
+  },
+  {
     name: "CV",
     text: "CV",
     url: "/CV.pdf",
     isText: true,
-  },
-  {
-    name: "Resume",
-    icon: profilelogo,
-    // Assuming Resume.pdf will be placed in the public directory for direct access
-    url: "/Resume.pdf",
-    isText: false,
-    isLarger: true,
   },
 ];
 
@@ -50,7 +48,7 @@ const SocialSidebar = () => {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed left-5 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4"
+      className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden flex-col gap-4 sm:flex"
     >
       {socialLinks.map((link) => (
         <motion.a
@@ -71,7 +69,7 @@ const SocialSidebar = () => {
             <img 
               src={link.icon} 
               alt={link.name} 
-              className={`${link.isLarger ? 'w-7 h-7' : 'w-5 h-5'} object-contain`} 
+              className="w-5 h-5 object-contain"
             />
           )}
         </motion.a>
